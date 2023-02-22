@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import { Layout } from './containers/Layout';
+import { Login } from './containers/Login';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <h1 className='text-red-500'>Hola mundo</h1>
+    <Layout>
+      <Login />
+    </Layout>
   )
 }
 

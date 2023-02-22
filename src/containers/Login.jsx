@@ -2,21 +2,21 @@ import React from 'react'
 
 export const Login = () => {
     return (
-        <div className='w-full h-screen grid place-items-center'>
-            <div className='grid grid-rows-auto-1fr-auto w-300'>
-                <img src="../logos/logo_yard_sale.svg" alt="logo" className='w-150 mb-48 justify-self-center hidden' />
+        <div className='login m-0 font-sans w-full h-screen grid place-items-center'>
+            <div className='form-container grid grid-rows-auto-1fr-auto w-300'>
+                <img src="../logos/logo_yard_sale.svg" alt="logo" className='logo w-150 mb-48 justify-self-center hidden' />
 
-                <h1 className="text-lg mb-12 text-center">Create a new password</h1>
-                <p className="text-very_light_pink text-md font-light mt-0 mb-32 text-center">Enter a new password for your account</p>
+                <h1 className="title text-lg mb-5 text-center">Create a new password</h1>
+                <p className="subtitle text-very_light_pink text-md font-light mt-0 mb-31 text-center">Enter a new password for your account</p>
 
-                <form action="" className='flex flex-col'>
-                    <label for="password" class="text-sm font-bold mb-4">Password</label>
-                    <input type="password" id="password" placeholder="*********" class="bg-text_input_field rounded-lg border-none h-30 text-md px-6 mb-12"/>
+                <form action="" className='form flex flex-col'>
+                    <label for="password" className="password text-sm text-left font-bold mt-0 mb-1">Password</label>
+                    <input type="password" id="password" placeholder="*********" class="input input-password bg-text_input_field rounded-lg  h-30 text-md px-6 mt-0 mb-5"/>
 
-                    <label for="new-password" class="text-sm font-bold mb-4">Password</label>
-                    <input type="password" id="new-password" placeholder="*********" class="bg-text_input_field rounded-lg border-none h-30 text-md px-6 mb-12"/>
+                    <label for="new-password" class="label text-sm text-left font-bold mb-1">Password</label>
+                    <input type="password" id="new-password" placeholder="*********" className="input input-password bg-text_input_field rounded-lg border-none h-30 text-md px-6 mb-7"/>
 
-                    <input type="submit" value={confirm} className='bg-hospital_green rounded-8 border-0 text-white w-full cursor-pointer text-md font-bold h-14' />
+                    <input type="submit" value={'Confirm'} className='primary-button bg-hospital_green font-bold rounded-md border-none text-white w-full cursor-pointer text-md h-14' />
                 </form>
             </div>
         </div>
