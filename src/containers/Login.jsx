@@ -11,9 +11,9 @@ export const Login = () => {
 
                 <form action="" className='form flex flex-col'>
                     <label for="password" className="password text-sm text-left font-bold mt-0 mb-1">Password</label>
-                    <input type="password" id="password" placeholder="*********" class="input input-password bg-text_input_field rounded-lg  h-30 text-md px-6 mt-0 mb-5"/>
+                    <input type="password" id="password" placeholder="*********" className="input input-password bg-text_input_field rounded-lg  h-30 text-md px-6 mt-0 mb-5"/>
 
-                    <label for="new-password" class="label text-sm text-left font-bold mb-1">Password</label>
+                    <label for="new-password" className="label text-sm text-left font-bold mb-1">Password</label>
                     <input type="password" id="new-password" placeholder="*********" className="input input-password bg-text_input_field rounded-lg border-none h-30 text-md px-6 mb-7"/>
 
                     <input type="submit" value={'Confirm'} className='primary-button bg-hospital_green font-bold rounded-md border-none text-white w-full cursor-pointer text-md h-14' />

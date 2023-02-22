@@ -1,20 +1,20 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import '../App.css'
-import { Layout } from '../containers/Layout';
 import { Login } from '../containers/Login';
 import { RecoveryPassword } from '../containers/RecoveryPassword';
+import { Home } from './Home';
+import { NotFound } from './NotFound';
 
 function App() {
   return (
     <BrowserRouter>
-      <switch>
-        <Layout>
-          <Route exact path="/" component={Login} />
-          <Route exact path="/recovery-password" component={RecoveryPassword} />
-          <Route component={NotFound} />
-        </Layout>
-      </switch>
+      <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/recovery-password" element={<RecoveryPassword />} />
+          <Route path='*' element={<NotFound />} />
+      </Routes>
     </BrowserRouter>
   )
 }
