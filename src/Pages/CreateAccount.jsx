@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MyAccount = () => {
+export const CreateAccount = () => {
   return (
     <div className="login w-full h-screen grid place-items-center">
       <div className="form-container grid place-items-center grid-rows-auto-1fr-auto w-300">
