@@ -13,11 +13,11 @@ export const Header = () => {
                     <img src={yard_sale} alt="logo" className="logo w-100 min-w-min" />
                 </div>
 
-                <ul className="list-none p-0 m-0 flex items-center h-[60] ml-12 2xl:hidden">
+                <ul className="list-none p-0 m-0 flex items-center h-[60] ml-12 ">
                     <li>
                         <a
                             href="/"
-                            className="no-underline text-very_light_pink border-none border-white rounded-md px-4 py-2 hover:text-hospital_green inline-block transition-transform hover:scale-110 align-middle"
+                            className="no-underline text-very_light_pink  px-4 py-2 hover:text-hospital_green  inline-block transition-transform hover:scale-110 align-middle"
                         >
                         All
                         </a>
@@ -25,7 +25,7 @@ export const Header = () => {
                     <li>
                         <a
                             href="/"
-                            className="no-underline text-very_light_pink border-none border-white rounded-md px-4 py-2 hover:text-hospital_green inline-block transition-transform hover:scale-110 align-middle"
+                            className="no-underline text-very_light_pink  px-4 py-2 hover:text-hospital_green  inline-block transition-transform hover:scale-110 align-middle"
                         >
                         Clothes
                         </a>
@@ -33,7 +33,7 @@ export const Header = () => {
                     <li>
                         <a
                             href="/"
-                            className="no-underline text-very_light_pink border-none border-white rounded-md px-4 py-2 hover:text-hospital_green inline-block transition-transform hover:scale-110 align-middle"
+                            className="no-underline text-very_light_pink  px-4 py-2 hover:text-hospital_green  inline-block transition-transform hover:scale-110 align-middle"
                         >
                         Electronics
                         </a>
@@ -41,7 +41,7 @@ export const Header = () => {
                     <li>
                         <a
                             href="/"
-                            className="no-underline text-very_light_pink border-none border-white rounded-md px-4 py-2 hover:text-hospital_green inline-block transition-transform hover:scale-110 align-middle"
+                            className="no-underline text-very_light_pink  px-4 py-2 hover:text-hospital_green  inline-block transition-transform hover:scale-110 align-middle"
                         >
                         Furnitures
                         </a>
@@ -49,7 +49,7 @@ export const Header = () => {
                     <li>
                         <a
                             href="/"
-                            className="no-underline text-very_light_pink border-none border-white rounded-md px-4 py-2 hover:text-hospital_green inline-block transition-transform hover:scale-110 align-middle"
+                            className="no-underline text-very_light_pink  px-4 py-2 hover:text-hospital_green  inline-block transition-transform hover:scale-110 align-middle"
                         >
                         Toys
                         </a>
@@ -57,7 +57,7 @@ export const Header = () => {
                     <li>
                         <a
                             href="/"
-                            className="no-underline text-very_light_pink border-none border-white rounded-md px-4 py-2 hover:text-hospital_green inline-block transition-transform hover:scale-110 align-middle"
+                            className="no-underline text-very_light_pink  px-4 py-2 hover:text-hospital_green  inline-block transition-transform hover:scale-110 align-middle"
                         >
                         Others
                         </a>
