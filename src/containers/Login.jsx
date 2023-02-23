@@ -1,22 +1,23 @@
-import React from 'react'
+import React from 'react';
+import logo_yard_sale from '../logos/logo_yard_sale.svg';
 
 export const Login = () => {
     return (
-        <div className='login m-0 font-sans w-full h-screen grid place-items-center'>
-            <div className='form-container grid grid-rows-auto-1fr-auto w-300'>
-                <img src="../logos/logo_yard_sale.svg" alt="logo" className='logo w-150 mb-48 justify-self-center hidden' />
+        <div className="login w-full h-full grid place-items-center">
+            <div className="form-container grid place-items-center grid-rows-auto-1fr-auto w-300">
+                <img src={logo_yard_sale} alt="logo" className='logo w-[150] mb-[48] place-items-center hidden'/>
 
-                <h1 className="title text-lg mb-5 text-center">Create a new password</h1>
-                <p className="subtitle text-very_light_pink text-md font-light mt-0 mb-31 text-center">Enter a new password for your account</p>
+                <form action="/" className='form flex flex-col'>
+                    <label htmlFor="email" className='label text-sm font-bold mb-4'>Email address</label>
+                    <input type="email" id='email' placeholder='platzi@example.com' className='input input-email bg-text_input_field border-none rounded-md h-[30] text-md p-2 mb-5'/>
 
-                <form action="" className='form flex flex-col'>
-                    <label for="password" className="password text-sm text-left font-bold mt-0 mb-1">Password</label>
-                    <input type="password" id="password" placeholder="*********" className="input input-password text-black bg-text_input_field rounded-lg  h-30 text-md px-6 mt-0 mb-5"/>
+                    <label htmlFor="password" className='label text-sm font-bold mb-[4]'>Password</label>
+                    <input type="password" id='password' placeholder='********' className='input input-password bg-text_input_field border-none rounded-md h-[30] text-md p-2 mb-10'/>
 
-                    <label for="new-password" className="label text-sm text-left font-bold mb-1">Password</label>
-                    <input type="password" id="new-password" placeholder="*********" className="input input-password text-black bg-text_input_field rounded-lg border-none h-30 text-md px-6 mb-7"/>
+                    <input type='submit' value='Login' className='primary-button login-button bg-hospital_green rounded-md border-none text-white w-full cursor-pointer text-md font-bold h-[50] mt-14 mb-30 transition-transform hover:scale-110 align-middle' />
+                    <a href="/" className='text-hospital_green text-sm text-center no-underline mb-[4]'>Forgot my password</a>
 
-                    <input type="submit" value={'Confirm'} className='primary-button bg-hospital_green font-bold rounded-md border-none text-white w-full cursor-pointer text-md h-14' />
+                    <button className='secondary-button signup-button text-hospital_green bg-white rounded-md border-2 border-hospital_green w-full cursor-pointer text-md font-bold h-50 transition-transform hover:scale-110 align-middle'>Sign up</button>
                 </form>
             </div>
         </div>

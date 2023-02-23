@@ -5,7 +5,7 @@ import email_image from '../icons/email.svg'
 export const RecoveryPassword = () => {
     return(
         <div className='login m-0 font-sans w-full h-screen grid place-items-center'>
-            <div className="form-container grid grid-rows-auto-1fr-auto w-300 items-center">
+            <div className="form-container grid grid-rows-auto-1fr-auto w-300 justify-items-center">
                 <img src={logo_yard_sale} alt="logo" className='logo w-150 mb-48 justify-self-center hidden' />
 
                 <h1 className="title text-lg mb-5 text-center">Email has been sent</h1>
