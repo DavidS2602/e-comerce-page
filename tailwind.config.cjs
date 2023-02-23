@@ -3,6 +3,12 @@ module.exports = {
   content: ['./src/**/*.html', './src/**/*.vue', './src/**/*.jsx'],
   theme: {
     extend: {
+      screens: {
+        'mobile': {'min' :'300px', 'max':'640px'},
+        'tablet': {'min' :'640px', 'max':'1024px'},
+        'laptop': {'min' :'1024px', 'max':'1280px'},
+        'desktop': {'min' :'1280px', 'max' :'1920px'},
+      },
       colors: {
         white: '#ffffff',
         black: '#000000',
