@@ -7,6 +7,7 @@ import { Home } from '../Pages/Home';
 import { NotFound } from '../Pages/NotFound';
 import { Login } from '../Pages/Login';
 import { CreateAccount } from '../Pages/CreateAccount';
+import { MyAccount } from './../Pages/MyAccount';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/NewPassword" element={<NewPassword />} />
           <Route exact path="/recovery-password" element={<RecoveryPassword />} />
-          <Route exact path="/Myaccount" element={<CreateAccount />} />
+          <Route exact path="/CreateAccount" element={<CreateAccount />} />
+          <Route exact path="/MyAccount" element={<MyAccount />} />
           <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
