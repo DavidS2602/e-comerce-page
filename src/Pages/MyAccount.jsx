@@ -2,7 +2,7 @@ import React from "react";
 
 export const MyAccount = () => {
     return (
-        <div className="login m-0 font-sans w-full h-screen grid place-items-center">
+        <div className="login font-Quicksand m-0 w-full h-screen grid place-items-center">
             <div className="form-container grid place-items-center grid-rows-auto-1fr-auto w-300 m:h-full">
                 <h1 className="title text-lg mb-[36px] text-start">My account</h1>
 

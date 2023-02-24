@@ -3,7 +3,7 @@ import logo_yard_sale from "../logos/logo_yard_sale.svg";
 
 export const Login = () => {
     return (
-        <div className="login w-full h-screen grid place-items-center">
+        <div className="login font-Quicksand w-full h-screen grid place-items-center">
             <div className="form-container grid place-items-center grid-rows-auto-1fr-auto w-300">
                 <img
                     src={logo_yard_sale}

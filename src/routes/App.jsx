@@ -10,6 +10,7 @@ import { CreateAccount } from '../Pages/CreateAccount';
 import { MyAccount } from './../Pages/MyAccount';
 import { ProductInfo } from './../components/ProductInfo';
 import { Menu } from './../components/Menu';
+import { MobileMenu } from './../components/MobileMenu';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/CreateAccount" element={<CreateAccount />} />
           <Route exact path="/MyAccount" element={<MyAccount />} />
           <Route exact path="/ProductInfo" element={<ProductInfo />} />
+          <Route exact path="/MobileMenu" element={<MobileMenu />} />
           <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
