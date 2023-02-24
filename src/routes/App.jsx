@@ -8,6 +8,7 @@ import { NotFound } from '../Pages/NotFound';
 import { Login } from '../Pages/Login';
 import { CreateAccount } from '../Pages/CreateAccount';
 import { MyAccount } from './../Pages/MyAccount';
+import { ProductInfo } from './../components/ProductInfo';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/recovery-password" element={<RecoveryPassword />} />
           <Route exact path="/CreateAccount" element={<CreateAccount />} />
           <Route exact path="/MyAccount" element={<MyAccount />} />
+          <Route exact path="/ProductInfo" element={<ProductInfo />} />
           <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
