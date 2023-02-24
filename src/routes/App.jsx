@@ -9,12 +9,14 @@ import { Login } from '../Pages/Login';
 import { CreateAccount } from '../Pages/CreateAccount';
 import { MyAccount } from './../Pages/MyAccount';
 import { ProductInfo } from './../components/ProductInfo';
+import { Menu } from './../components/Menu';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/Menu" element={<Menu />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/NewPassword" element={<NewPassword />} />
           <Route exact path="/recovery-password" element={<RecoveryPassword />} />

@@ -10,6 +10,9 @@ module.exports = {
         'laptop': {'min' :'1024px', 'max':'1280px'},
         'desktop': {'min' :'1280px', 'max' :'1920px'},
       },
+      divideWidth: {
+        DEFAULT: '1px',
+      },
       colors: {
         white: '#ffffff',
         black: '#000000',
