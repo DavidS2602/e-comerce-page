@@ -10,6 +10,9 @@ module.exports = {
         'laptop': {'min' :'1024px', 'max':'1280px'},
         'desktop': {'min' :'1280px', 'max' :'1920px'},
       },
+      zIndex: {
+        '2': '2',
+      },
       divideWidth: {
         DEFAULT: '1px',
       },
