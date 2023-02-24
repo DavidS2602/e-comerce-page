@@ -12,6 +12,7 @@ import { ProductInfo } from './../components/ProductInfo';
 import { Menu } from './../components/Menu';
 import { MobileMenu } from './../components/MobileMenu';
 import { MyOrders } from './../components/MyOrders';
+import { Order } from './../components/Order';
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
           <Route exact path="/MyAccount" element={<MyAccount />} />
           <Route exact path="/ProductInfo" element={<ProductInfo />} />
           <Route exact path="/MobileMenu" element={<MobileMenu />} />
-          <Route exact path="/Orders" element={<MyOrders />} />
+          <Route exact path="/OrdersUser" element={<MyOrders />} />
+          <Route exact path="/Orders" element={<Order />} />
           <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
