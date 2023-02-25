@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import add_to_cart from "../icons/bt_add_to_cart.svg";
 
 export const ProductItem = () => {
+    const [cart, setCart] = useState([])
+
+    const handleClick = () => {
+        setCart([])
+    }
     return (
         <div className="main-container ml-7">
             <div className="cards-container grid-cols-auto-fill gap-[26px] justify-center">
@@ -16,12 +21,12 @@ export const ProductItem = () => {
                             <p className="font-bold text-md mt-0 mb-[4px]">$120,00</p>
                             <p className="font-bold text-md mt-0 mb-[4px]">Bike</p>
                         </div>
-                            <figure className="m-[0px]">
-                        <img
-                            src={add_to_cart}
-                            alt=""
-                            className="w-[35px] h-[35px] cursor-pointer transition-transform hover:scale-110 align-middle inline-block"
-                        />
+                        <figure className="m-[0px]" onClick={handleClick}>
+                            <img
+                                src={add_to_cart}
+                                alt=""
+                                className="w-[35px] h-[35px] cursor-pointer transition-transform hover:scale-110 align-middle inline-block"
+                            />
                         </figure>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ module.exports = {
       screens: {
         'm': {'max': '640px'},
         't': {'max': '1024px'},
+        'menu': {'min': '1024px'},
         'mobile': {'min' :'300px', 'max':'640px'},
         'tablet': {'min' :'300px', 'max':'1024px'},
         'laptop': {'min' :'1024px', 'max':'1280px'},
