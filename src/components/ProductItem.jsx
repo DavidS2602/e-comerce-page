@@ -3,13 +3,13 @@ import add_to_cart from "../icons/bt_add_to_cart.svg";
 
 export const ProductItem = () => {
     return (
-        <div className="main-container">
+        <div className="main-container ml-7">
             <div className="cards-container grid-cols-auto-fill gap-[26px] justify-center">
                 <div className="product-card w-[240px]">
                     <img
                         src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                         alt=""
-                        className="w-full h-auto rounded-[20px] object-cover mt-[10px]"
+                        className="w-full h-auto rounded-[20px] object-cover mt-[50px]"
                     />
                     <div className="product-info flex justify-between items-center mt-[12px]">
                         <div>

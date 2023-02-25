@@ -6,7 +6,6 @@ module.exports = {
       screens: {
         'm': {'max': '640px'},
         't': {'max': '1024px'},
-        'menu': {'max': '1024px'},
         'mobile': {'min' :'300px', 'max':'640px'},
         'tablet': {'min' :'300px', 'max':'1024px'},
         'laptop': {'min' :'1024px', 'max':'1280px'},
@@ -14,9 +13,6 @@ module.exports = {
       },
       zIndex: {
         '2': '2',
-      },
-      divideWidth: {
-        DEFAULT: '1px',
       },
       colors: {
         white: '#ffffff',
