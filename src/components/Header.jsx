@@ -5,12 +5,12 @@ import shoppingCart from "../icons/icon_shopping_cart.svg";
 
 export const Header = () => {
     return (
-        <nav className="flex justify-between pt-0 px-24 border-b border-very_light_pink">
-            <img src={menu} alt="menu" className="menu sm:hidden" />
+        <nav className="flex justify-between pt-0  border-b border-very_light_pink">
+            <img src={menu} alt="menu" className="menu  m:hidden " />
 
-            <div className="navbar-left flex ">
-                <div className="mobile:hidden">
-                    <img src={yard_sale} alt="logo" className="logo w-100 min-w-min" />
+            <div className="navbar-left flex t:hidden ">
+                <div>
+                    <img src={yard_sale} alt="logo" className="logo w-100 min-w-min t:hidden t:w-[100px] t:h-[100px]" />
                 </div>
 
                 <ul className="list-none p-0 m-0 flex items-center h-[60] ml-12 ">
@@ -66,7 +66,7 @@ export const Header = () => {
             </div>
 
             <div className="navbar-right flex items-center">
-                <span className="navbar-email text-very_light_pink text-sm mr-12 sm:mr-0">
+                <span className="navbar-email text-very_light_pink text-sm mr-12 sm:mr-0 m:hidden">
                     platzi@example.com
                 </span>
                 <ul className="flex cursor-pointer">

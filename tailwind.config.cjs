@@ -5,8 +5,10 @@ module.exports = {
     extend: {
       screens: {
         'm': {'max': '640px'},
+        't': {'max': '1024px'},
+        'menu': {'max': '1024px'},
         'mobile': {'min' :'300px', 'max':'640px'},
-        'tablet': {'min' :'640px', 'max':'1024px'},
+        'tablet': {'min' :'300px', 'max':'1024px'},
         'laptop': {'min' :'1024px', 'max':'1280px'},
         'desktop': {'min' :'1280px', 'max' :'1920px'},
       },

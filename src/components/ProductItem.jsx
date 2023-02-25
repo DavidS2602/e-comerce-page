@@ -9,7 +9,7 @@ export const ProductItem = () => {
                     <img
                         src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                         alt=""
-                        className="w-[240px] h-[240px] rounded-[20px] object-cover"
+                        className="w-full h-auto rounded-[20px] object-cover mt-[10px]"
                     />
                     <div className="product-info flex justify-between items-center mt-[12px]">
                         <div>

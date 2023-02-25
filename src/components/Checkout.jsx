@@ -1,7 +1,7 @@
 import React from "react";
 import flechita from "../icons/flechita.svg";
 
-export const Order = () => {
+export const Checkout = () => {
     return (
         <div className="my-order font-Quicksand w-full h-screen grid place-items-center">
             <div className="my-order-container grid grid-rows-auto-1fr-auto w-[300px]">
