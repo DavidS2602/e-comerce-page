@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import add_to_cart from "../icons/bt_add_to_cart.svg";
 
-export const ProductItem = () => {
+export const ProductItem = ({ product }) => {
     const [cart, setCart] = useState([])
 
     const handleClick = () => {
@@ -12,14 +12,14 @@ export const ProductItem = () => {
             <div className="cards-container grid-cols-auto-fill gap-[26px] justify-center">
                 <div className="product-card w-[240px]">
                     <img
-                        src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt=""
+                        src={product.images[0]}
+                        alt="{product.title}"
                         className="w-full h-auto rounded-[20px] object-cover mt-[50px]"
                     />
                     <div className="product-info flex justify-between items-center mt-[12px]">
                         <div>
-                            <p className="font-bold text-md mt-0 mb-[4px]">$120,00</p>
-                            <p className="font-bold text-md mt-0 mb-[4px]">Bike</p>
+                            <p className="font-bold text-md mt-0 mb-[4px]">${product.price}</p>
+                            <p className="font-bold text-md mt-0 mb-[4px]">{product.title}</p>
                         </div>
                         <figure className="m-[0px]" onClick={handleClick}>
                             <img
